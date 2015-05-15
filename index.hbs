@@ -14,29 +14,27 @@
 	<div class="main-col">
 		{{#foreach posts}}
 		<div class="post-entry post-list">
+
 			<article role="article" itemscope itemtype="http://schema.org/Article">
 				<div class="post-side">
 					<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD.MM.YYYY'}}</time>
 				</div>
 				<div class="post-main">
-					<a href="{{url}}" class="post-list-link">
-						<div>
-							<h2>{{title}}</h2>
-							{{excerpt}} 
-							<span class="readmore">
-								<span class="readmore-hover">READMORE</span>
-							</span>
-						</div>
-					</a>
+					<div>
+						<a href="{{url}}"><h2>{{title}}</h2></a>
+						{{excerpt}}
+						<a href="{{url}}">
+						<span class="readmore">
+							<span class="readmore-hover">READ MORE <i class="fa fa-angle-double-right"></i> </span>
+						</span>
+						</a>
+					</div>
 					<div class="post-info">
-						{{#if tags}}
-							<div class="tags">
-								<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
-							</div>
-						{{/if}}
+						<span class="post-entry tags">{{tags separator=" "}}</span>
 					</div>
 				</div>
 			</article>
+
 		</div>
 		{{/foreach}}
 
