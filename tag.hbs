@@ -1,0 +1,49 @@
+<!--- TEMPLATE FOR TAG PAGE --->
+{{!< default}}
+
+<div class="container">
+	
+	<!-- HEADER COLUMN --->	
+	<div class="header-col">
+		<header>
+			{{> header }}	
+		</header>
+	</div>
+	
+	<!--- MAIN COLUMN --->
+	<div class="main-col">
+		<h1 class="post-title post-entry post-list">Tag: {{tag.name}}</h1>
+		{{#foreach posts}}
+		<div class="post-entry post-list">
+
+			<article role="article" itemscope itemtype="http://schema.org/Article">
+				<div class="post-side">
+					<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD.MM.YYYY'}}</time>
+				</div>
+				<div class="post-main">
+					<div>
+						<a href="{{url}}"><h2>{{title}}</h2></a>
+						{{excerpt}} 
+						<a href="{{url}}">
+						<span class="readmore">
+							<span class="readmore-hover">READ MORE <i class="fa fa-angle-double-right"></i> </span>
+						</span>
+						</a>
+					</div>
+					<div class="post-info">
+						<span class="post-entry tags">{{tags separator=" "}}</span>
+					</div>
+				</div>
+			</article>
+
+		</div>
+		{{/foreach}}
+
+		<div class="pagination">
+			{{#if pagination}}{{{ pagination}}}{{/if}}
+		</div>
+		<footer>
+			{{> footer}}
+		</footer>
+	</div>
+</div>
