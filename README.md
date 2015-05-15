@@ -13,16 +13,16 @@ You can view a demo of MapacheGhost at: [http://www.mapachedev.com/](http://www.
 - Sharing and Comment sections - Sharing buttons (Facebook, Twitter and Google Plus) are provided. Reader comments are enabled by [Disqus](http://www.disqus.com/).
 
 ## Setup 
-- Clone the repository via GitHub here: [https://github.com/pau87x/minighost](https://github.com/pau87x/minighost).
-- Extract the content to **$GHOST_HOME/content/themes/MiniGhost**.
+- Clone the repository via GitHub here: [https://github.com/pau87x/mapacheghost](https://github.com/pau87x/mapacheghost).
+- Extract the content to **$GHOST_HOME/content/themes/mapacheghost**.
 - Create a static page titled "About" from the Ghost dashboard - This will be the "About me" page.
 - (Optional) Upload the blog cover page and the blog logo.
-- (Optional) Customize style using the LESS script file: **MiniGhost/assets/css/style.less**.
+- (Optional) Customize style using the LESS script file: **mapacheghost/assets/css/style.less**.
 - (Optional) Customize the theme structure by editing the template file (e.g. index.hbs, partials/header.hbs, etc.)
 
 ### Acknowledgement
 Special thanks to Daniel Riemer for his [Ghost-Blank theme](https://github.com/zitrusfrisch/Ghost-Blank).
 
 ### Disclaimer
-MapacheGhost is designed by pau87x based in MiniGhost designed by [T.H.Yu](http://www.thyu.org/). 
+MapacheGhost is designed by pau87x based in minighost designed by [T.H.Yu](http://www.thyu.org/). 
 MapacheGhost is released under the [MIT license](http://opensource.org/licenses/MIT).

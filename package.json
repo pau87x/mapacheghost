@@ -1,5 +1,5 @@
 {
-  "name": "MapacheDev",
+  "name": "MapacheGhost",
   "version": "1.0.0",
   "description": "A minimal and responsive theme for Ghost.",
   "main": "gulpfile.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pau87x/minighost.git"
+    "url": "https://github.com/pau87x/mapacheghost.git"
   },
   "keywords": [
     "ghost",
     "blog",
-    "mapachedev"
+    "mapacheghost"
   ],
   "author": "Paulina Elizalde",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pau87x/minighost/issues"
+    "url": "https://github.com/pau87x/mapacheghost/issues"
   },
-  "homepage": "https://github.com/pau87x/minighost",
+  "homepage": "https://github.com/pau87x/mapacheghost",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
