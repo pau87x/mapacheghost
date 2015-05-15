@@ -19,22 +19,26 @@
 				{{#post}}	
 				<article role="article" itemscope itemtype="http://schema.org/Article" class="postlistArticle">
 					<h1 class="post-title">{{title}}</h1>
+
+
+					<div class="post-info">
 					<time datetime="{{date format="YYYY MMM DD"}}" itemprop="datePublished">
 						<span class="datetime-full">{{date format="DD.MM.YYYY"}}</span>
 					</time>
-					<div class="post-info">
-						{{#if tags}}
-							<div class="tags">
-							<i class="fa fa-tags fa-lg"></i> {{tags separator=" | "}}
-							</div>
-						{{/if}}
+						<span class="post-entry tags">{{tags separator=" "}}</span>
 					</div>
+
 					<div class="hrule"></div>
 					<div class="postContent">
 						{{content}} 
 					</div>
 				</article>
-				
+				<div class="author-info">
+					<img src="{{author.image}} " alt="{{author.name}}" class="author-img" />
+					<h4 class="author-name">{{author.name}}</h4>
+					<p class="author-bio">{{author.bio}}</p>
+				</div>
+
 				<!--- Sharing Section --->
 				{{> share }}
 
