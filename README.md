@@ -2,8 +2,7 @@
 
 MapacheGhost is a minimal yet neat frame for [Ghost](http://ghost.org/). It is an open source, mobile first, CSS3-oriented, Javascript-free (except modernizr), customizable theme for personal blogging.
 
-## Demo
-You can view a demo of MapacheGhost at: [http://www.mapachedev.com/](http://www.mapachedev.com/)
+## Snapshot
 
 ## Features
 - Fast and neat - In order to improve loading speed, the entire MapacheGhost theme is designed using CSS, Javascript is not used in the theme except for modernizr.
